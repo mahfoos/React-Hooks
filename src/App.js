@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
+// useState use only in function component
+// cannot the put the hooks inside the if statement
+// useState return a array
 function App() {
+  const arr = useState (4);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <button>-</button>
+      <span>0</span>
+      <button>+</button>
+    </>
   );
 }
 
